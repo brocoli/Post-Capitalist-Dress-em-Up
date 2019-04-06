@@ -1,6 +1,6 @@
 extends Node2D
 
-export (PackedScene) var Background = preload("res://components/background.tscn")
+export (PackedScene) var Background = preload("res://components/background/background.tscn")
 
 
 const BACKGROUND_WIDTH: int = 2048  # I wish we could get this from Background in compile time...
