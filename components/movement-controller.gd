@@ -7,7 +7,7 @@ signal moved
 var velocity = Vector2()
 
 
-func get_input():
+func get_input() -> void:
 	velocity = Vector2()
 	
 	if Input.is_action_pressed('move_right'):
@@ -22,7 +22,7 @@ func get_input():
 	velocity = velocity.normalized() * speed
 
 
-func _physics_process(_delta):
+func _physics_process(_delta: float) -> void:
 	get_input()
 	
 	if velocity.x != 0 or velocity.y != 0:
