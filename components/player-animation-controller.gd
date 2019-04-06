@@ -35,10 +35,10 @@ func _physics_process(_delta: float) -> void:
 
 	if "idle" in directions:
 		if "right" in last_directions:
-			get_parent().get_node("AnimatedSprite").animation = "idle_right"
+			get_parent().get_node("PlayerSprite").animation = "idle_right"
 		elif "left" in last_directions:
-			get_parent().get_node("AnimatedSprite").animation = "idle_left"
+			get_parent().get_node("PlayerSprite").animation = "idle_left"
 	elif "right" in directions:
-		get_parent().get_node("AnimatedSprite").animation = "walk_right"
+		get_parent().get_node("PlayerSprite").animation = "walk_right"
 	elif "left" in directions:
-		get_parent().get_node("AnimatedSprite").animation = "walk_left"
+		get_parent().get_node("PlayerSprite").animation = "walk_left"
